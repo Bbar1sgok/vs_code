@@ -2,10 +2,10 @@
 #include <math.h>
 #include <stdlib.h>
 
-// Ýsim : Bayram Barýþ Gök
+// Ä°sim : Bayram BarÄ±ÅŸ GÃ¶k
 // Numara : 23219056
 
-// SABÝT
+// SABÄ°T
 float pi = 3.14;
 //Fonksiyon
 double metreyiInceCevir(double metre);
@@ -25,21 +25,21 @@ int main() {
 
         switch (op) {
         case '+':
-            // ... Toplama iþlemi
+            // ... Toplama iÅŸlemi
             printf("Lutfen iki sayi griniz.\n");
             scanf_s("%f %f", &sayi1, &sayi2);
             printf("Iki sayi toplandi.\n");
             printf("%.2f + %.2f = %.2f\n", sayi1, sayi2, sayi1 + sayi2);
             break;
         case '-':
-            // ... Çýkarma iþlemi
+            // ... Ã‡Ä±karma iÅŸlemi
             printf("Lutfen iki sayi griniz.\n");
             scanf_s("%f %f", &sayi1, &sayi2);
             printf("Iki sayinin farki bulundu.\n");
             printf("%.2f - %.2f = %.2f\n", sayi1, sayi2, sayi1 - sayi2);
             break;
         case '/':
-            // ... Bölme iþlemi
+            // ... BÃ¶lme iÅŸlemi
             printf("Lutfen iki sayi giriniz.\n");
             scanf_s("%f %f", &sayi1, &sayi2);
             printf("Iki sayi bolundu.\n");
@@ -50,14 +50,14 @@ int main() {
 
             break;
         case '*':
-            // ... Çarpma iþlemi
+            // ... Ã‡arpma iÅŸlemi
             printf("Lutfen iki sayi griniz.\n");
             scanf_s("%f %f", &sayi1, &sayi2);
             printf(" Iki sayi carpildi.\n");
             printf("%.2f * %.2f = %.2f \n", sayi1, sayi2, sayi1 * sayi2);
             break;
         case 'u':
-            // ... Üs alma iþlemi
+            // ... Ãœs alma iÅŸlemi
             printf("Birinci sayi taban, ikinci sayi ust olucak sekilde sayilari giriniz.\n");
             scanf_s("%f %f", &sayi1, &sayi2);
             printf(" Ust alma islemi yapidi.\n");
@@ -65,7 +65,7 @@ int main() {
             printf("\n%.2f^%.2f = %.2f\n", sayi1, sayi2, us_alma);
             break;
         case 'k':
-            // ... Karekök alma iþlemi
+            // ... KarekÃ¶k alma iÅŸlemi
             printf("Lutfen karekokunu almak istediginiz sayiyi giriniz.\n");
             scanf_s("%f", &sayi1);
             printf("Karekok alma islemi yapildi.\n");
@@ -73,7 +73,7 @@ int main() {
             printf("%.2f sayisinin karekoku %.2f sayisina esittir.\n", sayi1, kare_kok);
             break;
         case 'd':
-            // ... Dairenin alaný hesaplama
+            // ... Dairenin alanÄ± hesaplama
             printf("Lutfen dairenin yaricapini giriniz.\n");
             scanf_s("%f", &sayi1);
             printf("Dairenin alani hesaplandi\n.");
@@ -81,7 +81,7 @@ int main() {
             printf("%.2f\n", dairenin_alani);
             break;
         case 'v':
-            // ... Vücut Kitle Ýndeksi hesaplama
+            // ... VÃ¼cut Kitle Ä°ndeksi hesaplama
             printf("Lutfen sirasiyla kilonuzu (kg) cinsinden ve boyunuzu(m) cinsinden giriniz.\n");
             scanf_s("%f  %f", &sayi1, &sayi2);
             printf("Vucut - Kitle indeksinizin sonucu belli oldu.\n");
@@ -108,7 +108,7 @@ int main() {
             break;
         case 'm':
         {
-            // Metreyi inçe çevir ve sonucu ekrana yazdýr
+            // Metreyi inÃ§e Ã§evir ve sonucu ekrana yazdÄ±r
             printf("Metreyi girin: ");
             scanf_s("%lf", &metre);
 
@@ -124,7 +124,7 @@ int main() {
             hiz = sayi1 / sayi2;
             printf("Aracinizin hizi = %.2f", hiz);
         default:
-            printf("Geçersiz operator girdiniz. Tekrar deneyin.\n");
+            printf("GeÃ§ersiz operator girdiniz. Tekrar deneyin.\n");
         }
 
         printf("Baska bir islem yapmak istiyor musunuz? (1: Evet / 0: Hayir): ");
@@ -138,9 +138,9 @@ int main() {
 
 
 
-// Metreyi inçe çeviren fonksiyon
+// Metreyi inÃ§e Ã§eviren fonksiyon
 double metreyiInceCevir(double metre) {
-    const double METRE_TO_INCHE = 39.3701; // 1 metre = 39.3701 inç
+    const double METRE_TO_INCHE = 39.3701; // 1 metre = 39.3701 inÃ§
 
     return metre * METRE_TO_INCHE;
 }
