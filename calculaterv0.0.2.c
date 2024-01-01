@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 // İsim : Bayram Barış Gök
-// Numara : 23219056
+
 
 // SABİT
 float pi = 3.14;
